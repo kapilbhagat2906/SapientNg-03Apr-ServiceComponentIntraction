@@ -1,0 +1,12 @@
+<div class="comments">
+    <h3 class="comments_title">{{title}}</h3>
+    <div class="comments_section">
+        <div *ngIf="isLoading">Loading Comments...</div>
+        <ng-container *ngIf="!isLoading">
+            <div class="comments_section_comment"
+                *ngFor="let comment of comments">
+                <app-comment [comment]="comment"></app-comment>
+            </div>
+        </ng-container>
+    </div>
+</div>

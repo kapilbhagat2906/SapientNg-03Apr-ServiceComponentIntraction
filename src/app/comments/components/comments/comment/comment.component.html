@@ -1,0 +1,11 @@
+<div class="comment">
+    <div class="comment_toggle-collapse" (click)="isCollapsed = !isCollapsed">
+        <span *ngIf="!isCollapsed" title="Collapse Details">-</span>
+        <span *ngIf="isCollapsed" title="Expand Details">+</span>
+    </div>
+    <div class="comment_user-detail">
+        <div class="comment_user-detail_name">{{comment.name}}</div>
+        <div class="comment_user-detail_email">{{comment.email}}</div>
+    </div>
+    <div class="comment_body" [hidden]="isCollapsed">{{comment.body}}</div>
+</div>

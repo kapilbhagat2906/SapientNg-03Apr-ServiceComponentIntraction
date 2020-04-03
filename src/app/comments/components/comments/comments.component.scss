@@ -1,0 +1,11 @@
+$base-selector: '.comments';
+
+#{$base-selector} {
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+
+    &_title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+$base-selector: '.comment';
+
+#{$base-selector} {
+    border: 1px solid #d3d3d3;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+
+    &_toggle-collapse {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    &_user-detail {
+        font-weight: bold;
+        padding-bottom: 10px;
+        &_name {
+            font-size: 16px;
+        }
+
+        &_email {
+            font-size: 14px;
+            color: grey;
+        }
+    }
+
+    &_body {
+        font-size: 18px;
+        color: blueviolet;
+    }
+}
